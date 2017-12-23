@@ -1,0 +1,65 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>Facebook login tools</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style type="text/css">
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>  </div><div style="width: 300px;padding-top: 10px;"><center><p style="color: white; font-weight: bold;text-shadow: 0 0 0 #111111, 0 0 0.5em green, 0 0 0.4em green;">
+                <a href="https://facebook.com/100010921898385/" target="blank">
+				</a>Facebook Tools</p>
+       </center>
+      <div class="col-lg-12 mb-3 account-nologin">
+        <div class="alert alert-danger" role="alert">
+          Please Login Facebook before can get Cookie and Token.
+        </div>
+        <hr>
+        <form class="account-panel-login">
+          <div class="form-group">
+            <label class="form-control-label">Nhập Cookie or Token để login</label>
+            <textarea class="form-control" id="account-loginkey"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary account-btn-login">Login</button>
+          </div>
+
+        </form>
+        <div class="alert alert-warning account-panel-login-note hide" role="alert">
+          
+        </div>
+      </div>
+      <div class="col-lg-12 account-login-info hide">
+        <form>
+          <div class="form-group">
+            <label class="form-control-label">UID</label>
+            <input type="text" class="form-control" id="account-uid">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Cookie</label>
+            <input type="text" class="form-control" id="account-cookie">
+          </div>
+		  <div class="form-group">
+            <label class="form-control-label">Cookie Format Base64</label>
+            <input type="text" class="form-control" id="account-cookiebase64">
+          </div>
+		  
+          <div class="form-group">
+            <label class="form-control-label">Token <span class="account-token-waiting hide"><img src="https://ussv.net/themes/img/ajax-loader.gif" style="width: 15px;"></span></label>
+            <input type="text" class="form-control" id="account-token">
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-danger account-btn-logout">Logout</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  <center> Author: <a title="Liên hệ tác giả" href="https://facebook.com/100010921898385/" target="blank">Phạm Doãn Hiếu</a> </center>
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+</body></html>

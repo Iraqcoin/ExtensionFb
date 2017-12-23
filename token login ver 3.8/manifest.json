@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Tools",
+  "description": "Login với cookie,token và Get cookie, token",
+  "version": "3.8",
+  "version_name":"Version 3.8",
+"icons": {
+        "16": "/images/icon-16.png",
+        "48": "/images/icon-38.png",
+        "128": "/images/icon-128.png"
+    },
+  "browser_action": {
+    "default_icon": "/images/icon-38.png",
+    "default_popup": "popup.html"
+  },
+   "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "webRequestBlocking",
+    "webRequest",
+    "storage", 
+    "activeTab", 
+    "tabs", 
+    "proxy",
+    "webNavigation", 
+    "cookies",
+    "browsingData",
+    "notifications",
+    "contextMenus",
+    "clipboardWrite",
+    "clipboardRead",
+    "downloads"
+    ],
+	 "content_scripts": [
+      {
+        "matches": ["*://*.facebook.com/*"],
+        "all_frames": true,
+        "js": ["jquery.min.js"]
+		  }
+	  ],
+    "background": {
+        "scripts": ["jquery.min.js","background.js"],
+        "persistent": true
+    },      
+    "web_accessible_resources": [
+        "*://*.facebook.com/*", 
+        "https://*.facebook.com/*",
+        "jquery.min.js",
+        "popup.js"
+    ]
+}
